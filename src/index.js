@@ -13,8 +13,6 @@ const users = [];
 function checksExistsUserAccount(request, response, next) {
   const { username } = request.headers;
 
-  console.log(username);
-
   const user = users.find(user => user.username === username);
 
   if(!user) {
